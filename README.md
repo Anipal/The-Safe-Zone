@@ -13,5 +13,8 @@ Following are some of the features we aim to deploy in our application -
 3) Each rescue camp will input data regarding the supplies and services they require along with the number of people accomodated in each rescue camp. Each camp will also enter the information regarding each person accomodated, information will include name, address and phone number.
 The rescue camps can also declare whether they have been overflooded with rescuees for better management. All of this data will be accessible to the government and nearby NGO’s who can help in the relief operations by providing the necessary supplies and servces. 
 
-
+###Technologies used
+1) Azure
+2) Node.js
+3) Android
 
