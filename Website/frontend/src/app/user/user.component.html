@@ -1,0 +1,25 @@
+<div style="padding: 0px 20px;">
+  <h2>CIVILIANS</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr class="table-primary">
+          <th>Name</th>
+          <th>Aadhaar</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Safezone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of user; let i=index">
+          <td>{{item.name}}</td>
+          <td>{{item.aadhaar}}</td>
+          <td>{{item.phone}}</td>
+          <td>{{item.address}}</td>
+          <td>{{item.safezone}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

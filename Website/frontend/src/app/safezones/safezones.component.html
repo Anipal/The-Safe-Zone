@@ -1,0 +1,94 @@
+<div style="padding: 0px 20px;">
+  <h2>SAFEZONES</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-primary">
+                  <th>ID</th>
+                  <th>Address</th>
+                  <th>Capacity</th>
+                  <th>Sanitation Supplies</th>
+                  <th>Food Supplies</th>
+                  <th>Water Supplies</th>
+                  <th>Medicine Supplies</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of safezones; let i=index">
+                  <td>{{item.id}}</td>
+                  <td>{{item.address}}</td>
+                  <td>{{item.capacity}}</td>
+                  <td>{{item.sanitation}}</td>
+                  <td>{{item.food}}</td>
+                  <td>{{item.water}}</td>
+                  <td>{{item.meds}}</td>
+                  <td><button type="button" class="btn btn-sm btn-info" (click)="onEdit(i)">Edit</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div *ngIf="edit" class="container">
+            <form (submit) ="onEditSubmit()">  
+              <div class="form-group">
+                  <label class="col-form-label">Capacity</label>
+                  <input type="text" class="form-control" name="capacity" [(ngModel)]="capacity">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Sanitation</label>
+                    <input type="text" class="form-control" name="sanitation" [(ngModel)]="sanitation">
+                  </div>
+                <div class="form-group">
+                  <label class="col-form-label">Food Supplies</label>
+                  <input type="text" class="form-control" name="food" [(ngModel)]="food">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label">Water Supplies</label>
+                  <input type="text" class="form-control" name="water" [(ngModel)]="water">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label">Medicine Supplies</label>
+                  <input type="text" class="form-control" name="water" [(ngModel)]="meds">
+                </div>
+              <input class="btn btn-success" type="submit" name="submit">
+            </form>
+          </div>
+          <h3>Pending for approval</h3>
+          <div>
+      <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-dark">
+                  <th>Address</th>
+                  <th>Name of Owner</th>
+                  <th>Phone no. of Owner</th>
+                  <th>Email of Owner</th>
+                  <th>Aadhaar No. of Owner</th>
+                  <th>Approve</th>
+                  <th>Reject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of pending; let i=index">
+                  <td>{{item.address}}</td>
+                  <td>{{item.name}}</td>
+                  <td>{{item.phone}}</td>
+                  <td>{{item.email}}</td>
+                  <td>{{item.aadhaar}}</td>
+                  <td><button type="button" class="btn btn-success btn-sm" (click) = "onApprove(i)">Approve</button></td>
+                  <td><button type="button" class="btn btn-warning btn-sm" (click) = "onReject(i)">Reject</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div *ngIf="approve" class="container">
+              <form (submit) = "onSubmit()">
+                  <div class="form-group">
+                    <label class="col-form-label">Enter ID for the Safezone</label>
+                    <input type="text" class="form-control" name="safeId" [(ngModel)]="safeId">
+                  </div>
+                  <input class="btn btn-success" type="submit" name="submit">
+              </form>
+            </div>
+          </div>            
+          </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+		<form (submit)="onRegSubmit()">
+				<div class="form-group">
+					<label class="col-form-label" for="id" style="font-size: 24px">ID</label>
+					<input type="text" class="form-control" name="id" id="ID" [(ngModel)]="id">
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="address" style="font-size: 24px">Address</label>
+					<input type="text" class="form-control" id="address" name="address" [(ngModel)]="address">
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="lat" style="font-size: 24px">Lat</label>
+					<input type="text" class="form-control" id="lat" name="lat" [(ngModel)]="lat">
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="lon" style="font-size: 24px">Lon</label>
+					<input type="text" class="form-control" id="lon" name="lon" [(ngModel)]="lon">
+				</div>
+				<input class="btn-lg btn-info" type="submit" name="submit">
+			</form>
+</div>

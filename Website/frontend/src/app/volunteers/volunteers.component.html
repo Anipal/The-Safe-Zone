@@ -1,0 +1,27 @@
+<div style="padding: 0px 20px">
+  <h2>VOLUNTEERS</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Aadhaar</th>
+          <th>Phone</th>
+          <th>Role</th>
+          <th>Safezone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of volunteers; let i=index">
+          <td>{{item.volno}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.aadhaar}}</td>
+          <td>{{item.phone}}</td>
+          <td>{{item.role}}</td>
+          <td>{{item.safezone}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
