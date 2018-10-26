@@ -17,4 +17,5 @@ The rescue camps can also declare whether they have been overflooded with rescue
 1) Azure
 2) Node.js
 3) Android
-
+4) Angular
+5) Mongo DB
