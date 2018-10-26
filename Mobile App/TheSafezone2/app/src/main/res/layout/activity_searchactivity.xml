@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg3">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:alpha="0.8"
+        android:background="#FFFFFF"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your search results are :"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:paddingBottom="5dp"/>
+       <LinearLayout
+           android:layout_width="500dp"
+           android:layout_height="wrap_content"
+           android:background="@color/colorPrimaryDark"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="5dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_n1"
+               android:textColor="@color/red"
+               android:padding="5dp"
+               android:text="Name :"
+               />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Name :"
+            />
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_n2"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Phone :"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Phone :"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_n3"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Safezone :"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Safezone :"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_n4"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Address :"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4"
+            android:textColor="@color/red"
+            android:padding="5dp"
+            android:text="Address :"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

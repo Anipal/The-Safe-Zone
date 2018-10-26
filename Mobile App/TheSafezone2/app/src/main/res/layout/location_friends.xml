@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg3">
+    <ImageView android:src="@drawable/logo"
+        android:id="@+id/image_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text2"
+        android:textSize = "20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_loc"
+        android:text="Search for your loved ones"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text3"
+        android:textSize = "15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:text="Enter at least one of these fields to search"
+        />
+<LinearLayout
+    android:layout_below="@+id/text3"
+   android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="20dp"
+    android:alpha="0.7">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rellay1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/name_search"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Name: "/>
+
+    <EditText
+        android:id="@+id/name_search_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name_search"
+        android:layout_alignBottom="@+id/name_search"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/name_search"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellay2"
+        android:layout_below="@+id/rellay1"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/phone_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Phone: "
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:id="@+id/phone_search_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phone_search"
+        android:layout_alignBottom="@id/phone_search"
+        android:layout_alignBaseline="@id/phone_search"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="phone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellay3"
+        android:layout_below="@+id/rellay1"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/aadhar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:text="Aadhaar: "
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/aadhar_search_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/aadhar_search"
+            android:layout_alignBottom="@id/aadhar_search"
+            android:layout_alignBaseline="@id/aadhar_search"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellay2"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="110dp"
+        android:background="#FFFFFF"
+        android:text="SEARCH"
+        android:alpha="0.9" />
+</LinearLayout>
+    </RelativeLayout>
+
