@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "13111297499",
+    "firebase_url": "https://dazzling-seat-220114.firebaseio.com",
+    "project_id": "dazzling-seat-220114",
+    "storage_bucket": "dazzling-seat-220114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13111297499:android:64a289724ab7cc45",
+        "android_client_info": {
+          "package_name": "com.example.anipal.thesafezone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13111297499-kgrrt92d5cf7dti9g1k0t17bjihpgneg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anipal.thesafezone",
+            "certificate_hash": "386711134bf4c912efabe33c160049d678591455"
+          }
+        },
+        {
+          "client_id": "13111297499-tmeso04gj649oaegspuggu88p7m92lam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtfFBDeATNoOg7Y53Jh7unO-rUa4UBdgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13111297499-tmeso04gj649oaegspuggu88p7m92lam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13111297499:android:393ed689810de00d",
+        "android_client_info": {
+          "package_name": "com.nodomain.shouryaj98.pushnotiftry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13111297499-n053f6m2rd9of64h8b1lls922heet7i6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nodomain.shouryaj98.pushnotiftry",
+            "certificate_hash": "386711134bf4c912efabe33c160049d678591455"
+          }
+        },
+        {
+          "client_id": "13111297499-tmeso04gj649oaegspuggu88p7m92lam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtfFBDeATNoOg7Y53Jh7unO-rUa4UBdgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13111297499-tmeso04gj649oaegspuggu88p7m92lam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
